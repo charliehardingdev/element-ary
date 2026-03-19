@@ -2,7 +2,19 @@
 
 Element-ary is a Chrome extension that lets you right-click almost any page element and copy a structured summary of what you clicked.
 
-It is designed for developers, QA, and curious tinkerers who want fast access to element details without opening DevTools every time.
+It is built for developers, QA, and AI-assisted workflows where you want to hand ChatGPT, Claude, Codex, or another assistant the exact page context it needs without manually digging through DevTools first.
+
+## Best Use Case
+
+Element-ary is especially useful when you want to quickly give an AI assistant:
+
+- the exact link, image, form field, or UI element you are talking about
+- the surrounding HTML for that element
+- a selector-style DOM path
+- the cleaned page URL
+- a compact summary of element-specific metadata
+
+Instead of saying "the button on the right side is broken," you can paste a structured snapshot that gives the AI far better context right away.
 
 ## What It Copies
 
@@ -13,6 +25,14 @@ When you use `Element-ary Copy`, the extension can capture:
 - A CSS-style DOM path
 - The current page URL
 - Element-specific metadata for common element types
+
+This makes it useful for:
+
+- AI debugging help
+- bug reports
+- front-end QA
+- copy-pasting page context into tickets, docs, or chats
+- quickly understanding unfamiliar UI without a full inspection workflow
 
 Supported element types include:
 
@@ -48,6 +68,7 @@ Sometimes you do not want a full DevTools workflow. You just want to quickly gra
 - the structure of a form
 - the selector path for a flaky UI element
 - the cleaned page URL for a bug report
+- the exact page context you want to paste into an AI assistant
 
 Element-ary is built for that fast path.
 
@@ -63,7 +84,19 @@ Element-ary is built for that fast path.
 1. Open any webpage
 2. Right-click the element you want to inspect
 3. Click `Element-ary Copy`
-4. Paste the result anywhere you want
+4. Paste the result into ChatGPT, Claude, Codex, a bug report, or your notes
+
+## Great Prompts For AI
+
+You can pair Element-ary with prompts like:
+
+- `Why is this element not clickable?`
+- `Explain what this DOM structure is doing.`
+- `Write a Playwright selector for this element.`
+- `Help me debug why this form field is failing validation.`
+- `Suggest cleaner HTML or accessibility improvements for this component.`
+
+The extension gives the AI a much better starting point than a vague screenshot or description.
 
 ## Example Output
 
